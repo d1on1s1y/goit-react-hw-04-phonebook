@@ -24,6 +24,7 @@ export default function Form({ changeAppState }) {
     e.preventDefault();
     const obj = { name: name, tel: tel, id: nanoid(3) };
     changeAppState(obj);
+    e.target.reset()
   };
 
   return (
